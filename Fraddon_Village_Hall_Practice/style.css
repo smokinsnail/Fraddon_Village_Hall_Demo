@@ -1,0 +1,202 @@
+* {
+  
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  max-width: 100vw;
+  margin-top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: (6,1fr);
+  grid-template-rows: (6,1fr);
+}
+
+
+/* ------- Blocks for the header, logo, nav, title, image, white block -----*/
+
+#block1 {
+  
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #EAD6CD;
+    
+    
+  
+}
+
+/* ---- This is the logo ----*/
+#block1 img{
+  
+ width: 30%;
+ margin-left: 0.5vw;
+ margin-top: 0.5vw;
+ 
+
+}
+
+
+/* ---- This is the nav bar block ----*/
+#block2 {
+  text-align: right;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #EAD6CD;
+  
+
+}
+
+#block2 nav  {
+  margin-top: 3vw;
+  margin-right: 2vw;
+  /*border: black solid 2px;*/
+  
+}
+
+#block2 nav a {
+  text-decoration: none;
+  font-size: 2vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin-left: 1vw;
+  
+  
+}
+
+.nav_button {
+  
+  color: black;
+}
+
+.contact_button {
+  color: white;
+  background-color: #4A5FC1;
+  text-decoration: none;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-radius: 0.25rem;
+  
+}
+
+#block2 nav li {
+  list-style: none;
+  display: inline;
+  justify-items: end;
+  /*border: green solid 2px;*/
+  
+}
+
+/* ---- This is the title and text ----*/
+
+#block3 {
+  font-size: 1.5vw;
+  text-align: left;
+  padding: 5vw;
+  padding-bottom: 0vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background-color: #EAD6CD;
+  
+}
+
+/* ---- This is painting of the hall----*/
+
+#block4 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  /*border: solid black 2px;*/
+}
+
+ #block4 img {
+  width: 100%;
+  
+}
+
+/* ---- This is a white block so the painting looks like it overlaps the header ----*/
+
+#block5white {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background-color: white;
+  
+}
+
+
+
+/* ------- Blocks for the main section, alternating photos and text -----*/
+
+/* ---- This the section with the first photo on the main section of the page ----*/
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: (2,1fr);
+ 
+}
+
+#block6 {
+  margin-top: 7vw;
+  background-color: white;
+  text-align: center;
+  
+}
+
+#block6 img {
+width: 90%;
+
+}
+
+#block7 {
+  margin-top: 7vw;
+  background-color: white;
+  text-align: left;
+  padding-left: 7vw;
+  padding-right: 5vw;
+  padding-top: 3vw;
+  
+  
+}
+
+#block8 {
+  margin-top: 5vw;
+  background-color: white;
+  text-align: left;
+  padding-left: 5vw;
+  padding-right: 7vw;
+  padding-top: 3vw;
+}
+
+#block9 {
+  margin-top: 5vw;
+  background-color: white;
+  text-align: center;
+  
+}
+
+#block9 img {
+  width: 90%;
+}
+
+
+
+
+/* ------- Blocks for the footer section, map, contact -----*/
