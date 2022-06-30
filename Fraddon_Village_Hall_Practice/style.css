@@ -1,9 +1,21 @@
+/* To do:
+  Change Images
+  Add appropriate Text
+  Adjust Spacing
+  Include Grey block with quote
+  Add Footer
+  Finish other pages
+  Image and neighbouring text could be a single block with Left and right versions
+  Decide how to set responsive sizing, conflict between max width and using vw units
+*/
+
 * {
   
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
 }
 
+/* ------- Make the page fill the screen -----*/
 body {
   max-width: 100vw;
   margin-top: 0%;
@@ -11,6 +23,7 @@ body {
   margin-right: auto;
 }
 
+/* ------- Use the header as a container and divide into a 6x6 grid -----*/
 header {
   display: grid;
   grid-template-columns: (6,1fr);
@@ -19,6 +32,7 @@ header {
 
 
 /* ------- Blocks for the header, logo, nav, title, image, white block -----*/
+/* ------- Only need this to take up 1 square to 1 wide and 1 tall -----*/
 
 #block1 {
   
@@ -33,6 +47,7 @@ header {
 }
 
 /* ---- This is the logo ----*/
+/* ------- Size the logo inside its grid square including a small margin -----*/
 #block1 img{
   
  width: 30%;
@@ -44,6 +59,7 @@ header {
 
 
 /* ---- This is the nav bar block ----*/
+/* ------- Nav square to take up the rest of row one, aligned to the right side-----*/
 #block2 {
   text-align: right;
   grid-column-start: 2;
@@ -55,6 +71,7 @@ header {
 
 }
 
+/* ------- Add some space between the top and right of the  nav bar----*/
 #block2 nav  {
   margin-top: 3vw;
   margin-right: 2vw;
@@ -62,6 +79,7 @@ header {
   
 }
 
+/* ------- Style the navigation links, adding padding, space between and responsive font size----*/
 #block2 nav a {
   text-decoration: none;
   font-size: 2vw;
@@ -74,10 +92,12 @@ header {
   
 }
 
+/* ---Make the nav link text black except for the contact link----*/
 .nav_button {
-  
   color: black;
 }
+
+/* ---Styling for the contact link, white text, blue backgroiund----*/
 
 .contact_button {
   color: white;
@@ -91,6 +111,8 @@ header {
   
 }
 
+/* ---Display the nav links horizontally----*/
+
 #block2 nav li {
   list-style: none;
   display: inline;
@@ -99,7 +121,9 @@ header {
   
 }
 
-/* ---- This is the title and text ----*/
+/* ---- This is the title and text of the header ----*/
+/* ---- Used grid to span half the grid width (3/6 columns)----*/
+/* ---- Used grid to span 3 grid rows height (3/6 rows)----*/
 
 #block3 {
   font-size: 1.5vw;
@@ -115,6 +139,8 @@ header {
 }
 
 /* ---- This is painting of the hall----*/
+/* ---- Used grid to span the other half of the grid width (3 columns)----*/
+/* ---- Used grid to span 3 grid rows for height)----*/
 
 #block4 {
   grid-column-start: 3;
@@ -124,13 +150,14 @@ header {
   /*border: solid black 2px;*/
 }
 
+/* ---- Fill the container with the image----*/
  #block4 img {
   width: 100%;
   
 }
 
-/* ---- This is a white block so the painting looks like it overlaps the header ----*/
-
+/* ---- Include a white block on the left half of the grid below the pink so the painting looks like it overlaps pink area ----*/
+/* ---- Fill the container with the image----*/
 #block5white {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -141,10 +168,8 @@ header {
 }
 
 
-
-/* ------- Blocks for the main section, alternating photos and text -----*/
-
-/* ---- This the section with the first photo on the main section of the page ----*/
+/* ------------------------Main Section--------------------*/
+/* ---Create a new grid for the main section 2 columns wide and x rows tall---*/
 
 main {
   display: grid;
@@ -152,6 +177,8 @@ main {
   grid-template-rows: (2,1fr);
  
 }
+
+/* ---- This is the row with the first photo and text on the main section of the page ----*/
 
 #block6 {
   margin-top: 7vw;
@@ -176,6 +203,7 @@ width: 90%;
   
 }
 
+/* ---- This is the row with the text and second photo on the main section of the page ----*/
 #block8 {
   margin-top: 5vw;
   background-color: white;
@@ -197,6 +225,4 @@ width: 90%;
 }
 
 
-
-
-/* ------- Blocks for the footer section, map, contact -----*/
+/* ------- Blocks for the footer section, map, contact will be here -----*/
